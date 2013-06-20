@@ -18,6 +18,15 @@ module.exports = function(grunt) {
         // just run 'grunt bower:install' and you'll see files from your Bower packages in lib directory
       }
     },
+    jasmine: {
+      pivotal: {
+        src: 'src/**/*.js',
+        options: {
+          specs: 'spec/*Spec.js',
+          helpers: 'spec/*Helper.js'
+        }
+      }
+    },
     concat: {
       options: {
         banner: '<%= banner %>',
@@ -55,9 +64,6 @@ module.exports = function(grunt) {
       },
       gruntfile: {
         src: 'Gruntfile.js'
-      },
-      lib_test: {
-        src: ['lib/**/*.js', 'test/**/*.js']
       }
     },
     watch: {
@@ -86,6 +92,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-csslint');
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'concat', 'uglify']);
+  grunt.registerTask('default', ['jshint', 'jasmine', 'concat', 'uglify']);
 
 };
