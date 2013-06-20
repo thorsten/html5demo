@@ -7,7 +7,7 @@ module.exports = function(grunt) {
     meta: {
       version: '0.1.0'
     },
-    banner: '/*! PROJECT_NAME - v<%= meta.version %> - ' +
+    banner: '/*! HTML5Demo - v0.1.0 - ' +
       '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
       '* http://PROJECT_WEBSITE/\n' +
       '* Copyright (c) <%= grunt.template.today("yyyy") %> ' +
