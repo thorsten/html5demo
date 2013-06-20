@@ -1,0 +1,11 @@
+{
+    "name": "HTML5Demo",
+    "version": "0.1.0",
+    "dependencies": {
+        "jquery": "1.10",
+        "bootstrap": "https://github.com/twitter/bootstrap/archive/3.0.0-wip.zip",
+        "modernizr": "2.6.2",
+        "yepnope": "1.5.4",
+        "font-awesome": "3.1.0"
+    }
+}
