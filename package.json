@@ -20,6 +20,7 @@
   },
   "devDependencies": {},
   "scripts": {
+    "preinstall" : "npm install bower less@beta grunt-cli grunt-init -g",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
