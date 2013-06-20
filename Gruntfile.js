@@ -33,8 +33,8 @@ module.exports = function(grunt) {
         stripBanners: true
       },
       dist: {
-        src: ['lib/FILE_NAME.js'],
-        dest: 'dist/FILE_NAME.js'
+        src: ['lib/jquery/jquery.js', 'src/helloHtml5.js'],
+        dest: 'dist/yatego.js'
       }
     },
     uglify: {
@@ -43,7 +43,7 @@ module.exports = function(grunt) {
       },
       dist: {
         src: '<%= concat.dist.dest %>',
-        dest: 'dist/FILE_NAME.min.js'
+        dest: 'dist/yatego.min.js'
       }
     },
     jshint: {
