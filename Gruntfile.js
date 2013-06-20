@@ -13,6 +13,11 @@ module.exports = function(grunt) {
       '* Copyright (c) <%= grunt.template.today("yyyy") %> ' +
       'YOUR_NAME; Licensed MIT */\n',
     // Task configuration.
+    bower: {
+      install: {
+        // just run 'grunt bower:install' and you'll see files from your Bower packages in lib directory
+      }
+    },
     concat: {
       options: {
         banner: '<%= banner %>',
@@ -68,6 +73,7 @@ module.exports = function(grunt) {
   });
 
   // These plugins provide necessary tasks.
+  grunt.loadNpmTasks('grunt-bower-task');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
